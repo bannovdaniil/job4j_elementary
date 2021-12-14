@@ -4,5 +4,6 @@ public class StudentInfo {
     public static void main(String[] args) {
         System.out.println("Daniil Bannov");
         System.out.println("10.07.1977");
+
     }
 }
