@@ -7,6 +7,7 @@ public class Games {
         } else {
             System.out.println("I can't.");
         }
+
     }
 
     public static void main(String[] args) {
