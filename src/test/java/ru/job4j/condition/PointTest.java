@@ -28,7 +28,7 @@ public class PointTest {
     }
 
     @Test
-    public void when1017to20then1878() {
+    public void when10and17to2and0then18dot78() {
         double expected = 18.78;
         int x1 = 10;
         int y1 = 17;
