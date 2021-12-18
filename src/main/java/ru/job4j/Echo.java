@@ -6,9 +6,8 @@ public class Echo {
         short s = 1500;
         char c = (char) s;
         double d = c;
-
-        System.out.println(d);
-
+        String k = "123";
+        System.out.println(k.length());
     }
 }
 
