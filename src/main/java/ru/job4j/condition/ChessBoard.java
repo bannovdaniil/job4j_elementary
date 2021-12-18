@@ -1,19 +1,22 @@
 package ru.job4j.condition;
 
 public class ChessBoard {
+    public static boolean check0to7(int num) {
+        if (num >= 0 && num <= 7) {
+            return true;
+        }
+        return false;
+    }
+
     public static int way(int x1, int y1, int x2, int y2) {
-        int deltaX = Math.abs(x2) - Math.abs(x1);
-        int deltaY = Math.abs(y2) - Math.abs(y1);
-        int rsl = 0;
+        if (check0to7(x1) && check0to7(x2) && check0to7(y1) && check0to7(y2)) {
 
-        if ((deltaX < 0 && deltaY > 0) || (deltaX > 0 && deltaY > 0) || (deltaX < 0 && deltaY < 0) || (deltaX > 0 && deltaY < 0)) {
-            deltaX = Math.abs(deltaX);
-            deltaY = Math.abs(deltaY);
+            int deltaX = Math.abs(x2 - x1);
 
-            if (deltaX == deltaY) {
-                rsl = deltaX;
+            if (deltaX == Math.abs(y2 - y1)) {
+                return deltaX;
             }
         }
-        return rsl;
+        return 0;
     }
 }
