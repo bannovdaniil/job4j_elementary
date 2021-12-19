@@ -16,7 +16,7 @@ public class ArrayDefinition {
         names[2] = "Коля";
         names[3] = "Вася";
 
-        for (int i = 0; i < 4; i++) {
+        for (int i = 0; i < names.length; i++) {
             System.out.println(i + ": " + names[i]);
         }
     }
