@@ -1,0 +1,19 @@
+package ru.job4j.array;
+
+public class SwitchArray {
+    public static int[] swapBorder(int[] array) {
+        int j = array.length - 1;
+        array[0] += array[j];
+        array[j] = array[0] - array[j];
+        array[0] -= array[j];
+        return array;
+    }
+
+    public static void main(String[] args) {
+        int[] nums = new int[]{1, 2, 3, 4, 5, 6};
+        int[] rsl = swapBorder(nums);
+        for (int i : rsl) {
+            System.out.println(i);
+        }
+    }
+}
