@@ -1,11 +1,8 @@
 package ru.job4j.condition;
 
 public class ChessBoard {
-    public static boolean check0to7(int num) {
-        if (num >= 0 && num <= 7) {
-            return true;
-        }
-        return false;
+    private static boolean check0to7(int num) {
+      return num >= 0 && num <= 7;
     }
 
     public static int way(int x1, int y1, int x2, int y2) {
