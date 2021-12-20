@@ -32,4 +32,10 @@ public class CheckTest {
         Assert.assertFalse(result);
     }
 
+    @Test
+    public void whenDataOneElementByFalseThenTrue() {
+        boolean[] data = new boolean[]{false};
+        boolean result = Check.mono(data);
+        Assert.assertTrue(result);
+    }
 }
